@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+  color: black;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #FFF;
+  padding: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: rgb(235, 10, 10);
+}
+
+.col-40 div {
+  margin-top: 10%;
+}
+
+.col-40 h1 {
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 5px;
+} 
+
+#lista-instrucciones {
+  margin-top: 5%;
+  font-size: 1em;
+}
+
+#titulo {
+  margin-top: 0;
+}
+.col-40 h2 {
+  font-size: 1.2em;
+}
+
+#titulo h1{
+  background-color: #E84A5F;
+  color: floralwhite;
+  text-align: center;
+}
+
+.col-60 {
+  background: #E84A5F;
+}
+
+#flecha{
+  font-size: 3em;
+  color: black;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.texto-centrado img {
+  width: 100%;
+}
+
+#juego div {
+  animation: fadein 2s;
+  width: 33.3%;
+  float: left
+}
+
+#juego img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 2px .5px #369390;
+  display: block;
+} 
+
+#pieza9 img {
+  visibility: hidden;
+}
+
+#juego {
+  width: 100%;
+  overflow: hidden;
+}
+
+#objetivo img {
+  width: 75%;
+  height: auto;
+}
+#footer {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 2em;
+  clear: both;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
